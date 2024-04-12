@@ -1,0 +1,53 @@
+.header {
+  padding: 20px, 10px;
+  background-color: black; // Change this to your desired background color
+  height: 100px; // Set the height to 100px
+  
+  nav {
+    width: 100%; // Make the nav element stretch across the entire width
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .navbar-brand {
+    padding: 20px; /* Remove any padding that might cause the title to wrap */
+    margin-right: 20px; /* Add or adjust margin if needed */
+    font-size: 1.5rem; /* Adjust font size as needed */
+  }
+  .navbar-nav {
+    display: flex;
+    align-items: center; /* Align items vertically within the navbar */
+    width: 50%;
+    
+  }
+  
+  .nav-item {
+    margin-right: 10px; /* Adjust margin between navigation items */
+    
+  }
+  
+  .btn-primary {
+    margin: 20px; /* Adjust margin between navigation item and button */
+    padding: 10px 20px; /* Adjust padding as needed */
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column; /* Stack navigation items vertically on smaller screens */
+    }
+  }  
+
+  ul {
+    list-style-type: none;
+    padding: 20px; /* Remove default padding */
+  }
+  
+  ul > li {
+    margin-right: 20px; /* Add margin between list items */
+  }
+}
