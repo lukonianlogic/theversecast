@@ -23,7 +23,7 @@
     "specialSkills": "Mechanical engineering, Robotics programming",
     "favoriteMovie": "Interstellar",
     "favoriteTVShow": "Doctor Who",
-    "favoriteNovel": "Dune",
+    "favoriteNovel": "The Hitchhiker's Guide to the Galaxy",
     "rank": "Lieutenant",
     "position": "Engineer"
   },
@@ -37,7 +37,7 @@
     "specialSkills": "Nunchakus, Movie Quotes",
     "favoriteMovie": "2001: A Space Odyssey",
     "favoriteTVShow": "Star Trek The Next Generation",
-    "favoriteNovel": "The Hobbit",
+    "favoriteNovel": "Moby Dick",
     "rank": "Lieutenant",
     "position": "Engineer"
   },
@@ -57,8 +57,8 @@
   },
   {
     "crewId": "5",
-    "name": "Kronsworth Pendleton",
-    "image": "kronsworth-pendleton.jpg",
+    "name": "The Mysterious Prusakowski",
+    "image": "prusakowski.jpg",
     "bio": "Kronsworth is the ship's resident scientist and astrophysicist. He spends his time studying cosmic phenomena and searching for signs of extraterrestrial life.",
     "nickname": "Stargazer",
     "likesDislikes": "Likes: Astronomy, Dislikes: Black holes",
@@ -68,19 +68,5 @@
     "favoriteNovel": "The Martian",
     "rank": "Lieutenant",
     "position": "Astrophysicist"
-  },
-  {
-    "crewId": "6",
-    "name": "B.U.R.T.",
-    "image": "burt.jpg",
-    "bio": "B.U.R.T. (Bio-mechanical Utility and Repair Technician) is the ship's AI assistant and maintenance droid. He's always ready to lend a robotic hand.",
-    "nickname": "Burt",
-    "likesDislikes": "Likes: Fixing things, Dislikes: System errors",
-    "specialSkills": "Technical repair, Data analysis",
-    "favoriteMovie": "WALL-E",
-    "favoriteTVShow": "Star Wars: The Clone Wars",
-    "favoriteNovel": "I, Robot",
-    "rank": "AI Assistant",
-    "position": "Maintenance Droid"
   }
 ]

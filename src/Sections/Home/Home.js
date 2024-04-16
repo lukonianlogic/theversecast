@@ -39,7 +39,7 @@ const Home = () => {
             <a href="https://youtube.com/your_youtube" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
               <FaYoutube size={iconSize * 2} />
             </a>
-            <a href="mailto:hello@theversecast.com" style={{ margin: '0 10px' }}>
+            <a href="mailto:theversecast@gmail.com" style={{ margin: '0 10px' }}>
               <FaEnvelope size={iconSize * 2}/>
             </a>
           </div>
