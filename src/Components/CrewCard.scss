@@ -2,21 +2,26 @@
   margin-top: 20px;
   width: 300px;
   height: 500px;
-  background-color: #00aff0;
-  border: 2px solid #fff200;
+  background-color: #003c55;
+  border: 10px solid #00aff0;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
   perspective: 1000px;
-  transition: transform 0.5s;
   transform-style: preserve-3d;
+  transition: transform 0.3s ease-in-out; // Unified transition
+  transform: scale(0.8); // Default smaller scale for non-active cards
+
+  &.slick-center {
+    transform: scale(1.0); // Larger scale for the active card
+  }
 
   &-inner {
     width: 100%;
     height: 100%;
     position: absolute;
     backface-visibility: hidden;
-    transition: transform 0.5s;
+    transition: transform 0.5s; // Ensure this does not conflict with the hover effect
   }
 
   &-front,
@@ -43,45 +48,34 @@
   }
 
   &-image-container {
-    flex: .5; // Take up 50% of the space
+    flex: 0.5; // Take up 50% of the space
   }
 
   &-image {
-    // max-width: auto;
-    // max-height: 100%;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     margin-bottom: 20px;
   }
 
-  &-name {
+  &-name, .crew-name { // Combine similar styles
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &-position, &-rank {
     font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .crew-name {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-
-  .crew-position, .crew-rank {
-    font-size: 20px;
     font-style: italic;
     margin-bottom: 10px;
   }
+
   &-bio {
     margin-bottom: 20px;
   }
 
-  &-details {
-    font-style: italic;
-  }
-
   &:hover {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); // This may conflict with slick's transform
   }
 
   &:hover .crew-card-front {

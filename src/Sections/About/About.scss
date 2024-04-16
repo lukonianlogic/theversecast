@@ -1,25 +1,57 @@
-.episodes-container {
-  background-color: black;
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #003c55;
+  align-items: center;
+  padding: 20px;
+  margin: auto;
 }
 
-.episodes {
-  .episode-section {
-      margin-bottom: 40px;
+.about-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff200;
+  font-size: 40px;
+}
 
-      .section-title {
-          font-size: 24px;
-          margin-bottom: 20px;
-      }
+.about-content {
+  font-size: 24px;
+  display: flex;
+  max-width: 1200px;
+  margin: 20px 20px;
+  justify-content: space-between;
+  text-align: left;
+}
 
-      .episode-cards {
-          display: flex;
-          flex-wrap: wrap;
+.text-section {
+  width: 50%;
+}
 
-          .col-md-4 {
-              flex: 0 0 33.333%;
-              max-width: 33.333%;
-              padding: 0 15px;
-          }
-      }
+.image-section {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 400px; // Ensure the image is not too large
+}
+
+/* Responsive behavior for smaller screens */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .image-section {
+    order: 2; // Place the image between the two paragraphs
+    width: 100%; // Take full width to align with the paragraphs
+  }
+
+  .text-section {
+    order: 1;
+    width: 100%;
   }
 }

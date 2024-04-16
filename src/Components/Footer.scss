@@ -1,0 +1,31 @@
+.footer {
+  padding: 20px 0;
+  background-color: #003c55; // Assuming your home background color
+  color: white; // Text color to contrast the background
+  font-family: 'Seravek', sans-serif; // Match the font from Home.scss
+  text-align: center; // Center align the content
+
+  a {
+    color: white; // Ensures links are visible against the dark background
+    margin: 0 10px; // Spacing between icons
+    transition: color 0.3s ease-in-out; // Smooth transition for hover effect
+
+    &:hover {
+      color: #00aff0; // Highlight color when hovered
+    }
+  }
+
+  .container {
+    max-width: 1200px; // Limit the maximum width of the content
+    margin: 0 auto; // Center the container within the footer
+    display: flex;
+    justify-content: center; // Center the items horizontally
+    align-items: center; // Center the items vertically
+  }
+
+  .social-icons {
+    margin: 0 15px; // Increase margin to accommodate larger icons
+    display: inline-flex; // Align icons nicely
+    align-items: center; // Center icons vertically
+  }
+}

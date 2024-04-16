@@ -2,9 +2,8 @@
   text-align: center;
   color: white;
   background-color: black;
+  padding: 20px 0; // Adds vertical padding to the entire app container
 }
-
-
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -12,16 +11,11 @@
   }
 }
 
-// .App-header {
-//   background-color: #282c34;
-//   min-height: 100vh;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   justify-content: center;
-//   font-size: calc(10px + 2vmin);
-//   color: white;
-// }
+// Additional padding for each section inside the main app
+// These styles target direct children of the main element if they need more specific spacing
+main > * {
+  margin-bottom: 30px; // Adds a bottom margin to all direct children of <main>
+}
 
 .App-link {
   color: #61dafb;

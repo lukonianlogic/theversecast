@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import EpisodeCard from '../../Components/EpisodeCard';
 import { useAuth } from '../../Services/AuthContext';
-import './Episodes.scss';
+import './Episodes.scss'; // Ensure the stylesheet is properly imported
 
 const Episodes = () => {
     const [episodes, setEpisodes] = useState([]);
-    const [offset, setOffset] = useState(0);  // Track the current offset
+    const [offset, setOffset] = useState(0);
     const { accessToken } = useAuth();
-    const limit = 6; // Episodes fetched per request
-    const showId = '6BZ7BmCQxqlxoJ9fZBzATR'; // Show ID
+    const limit = 6;
+    const showId = '6BZ7BmCQxqlxoJ9fZBzATR';
 
     useEffect(() => {
         const fetchData = async () => {
@@ -31,7 +31,7 @@ const Episodes = () => {
         };
 
         fetchData();
-    }, [accessToken, offset]);  // Include offset in the dependency array
+    }, [accessToken, offset]);
 
     const handleMoreEpisodes = () => {
         setOffset(prevOffset => prevOffset + limit);
@@ -43,12 +43,12 @@ const Episodes = () => {
                 <h2 className="section-title">Recent Episodes</h2>
                 <div className="episode-cards" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between' }}>
                     {episodes.map(episode => (
-                        <div key={episode.id} style={{ flex: '1 0 30%' }}> {/* Flex item style */}
+                        <div key={episode.id} style={{ flex: '1 0 30%' }}>
                             <EpisodeCard episode={episode} />
                         </div>
                     ))}
                 </div>
-                <button onClick={handleMoreEpisodes} style={{ margin: '20px 0', padding: '10px 20px' }}>More Episodes</button>
+                <button onClick={handleMoreEpisodes} className="btn-primary">More Episodes</button>
             </div>
         </div>
     );
