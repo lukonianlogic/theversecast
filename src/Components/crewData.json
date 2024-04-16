@@ -45,7 +45,7 @@
     "crewId": "4",
     "name": "Bridget Brogan",
     "image": "Bridget.jpeg",
-    "bio": "Bridget is the ship's communications officer and resident linguist. She enjoys deciphering alien languages and making first contact with new species.",
+    "bio": "Bridget was recruited because of her deep love Star Wars and her mean left hook.",
     "nickname": "Dr. Brogan, BS",
     "likesDislikes": "Likes: Boxing, Dislikes: Communication breakdowns",
     "specialSkills": "Punching, Singing",
@@ -57,16 +57,16 @@
   },
   {
     "crewId": "5",
-    "name": "The Mysterious Prusakowski",
+    "name": "The Mysterious 'Steven' Prusakowski",
     "image": "prusakowski.jpg",
-    "bio": "Kronsworth is the ship's resident scientist and astrophysicist. He spends his time studying cosmic phenomena and searching for signs of extraterrestrial life.",
-    "nickname": "Stargazer",
-    "likesDislikes": "Likes: Astronomy, Dislikes: Black holes",
-    "specialSkills": "Astrophysics, Research",
-    "favoriteMovie": "Gravity",
-    "favoriteTVShow": "Cosmos: A Spacetime Odyssey",
-    "favoriteNovel": "The Martian",
-    "rank": "Lieutenant",
-    "position": "Astrophysicist"
+    "bio": "Like the Nick Fury of the bunch minus most the charm and the lofty heroic goals. Prusakowski assembled The 'Verse! and provides the Squad with just enough resources to stay afloat",
+    "nickname": "FilmSnork",
+    "likesDislikes": "Likes: TV and Film, Dislikes: Dunking cookies in milk",
+    "specialSkills": "Cosmic Wit",
+    "favoriteMovie": "Back to the Future",
+    "favoriteTVShow": "Better Call Saul",
+    "favoriteNovel": "A Christmas Carol",
+    "rank": "Dictator",
+    "position": "God Emperor"
   }
 ]

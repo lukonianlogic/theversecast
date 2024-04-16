@@ -77,6 +77,6 @@ License
 Distributed under the MIT License. See LICENSE for more information.
 Contact
 
-@lukonianlogic
+Lucas Longacre - @lukonianlogic
 
 Project Link: https://github.com/lukonianlogic/theversecast
