@@ -13,8 +13,8 @@ const CrewCard = ({ crew }) => {
           </div>
           <div className="crew-info">
             <h3 className="crew-name">{name}</h3>
-            <p className="crew-position">Position: {position}</p>
-            <p className="crew-rank">Rank: {rank}</p>
+            <p className="crew-position">{position}</p>
+            <p className="crew-rank">{rank}</p>
           </div>
         </div>
         <div className="crew-card-back">

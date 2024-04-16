@@ -9,16 +9,16 @@ import Crew from "./Sections/Crew/Crew";
 import useSpotifyAuth from './Services/SpotifyAuth';
 
 function App() {
-  useSpotifyAuth();  // Using the custom hook
+  useSpotifyAuth();  
 
   return (
     <div className="App">
       <Header />
       <main className="py-3">
-          <Home />
-          <Episodes />
-          <About />
-          <Crew />
+          <div id='home'><Home /></div>
+          <div id="episodes"> <Episodes /></div>
+          <div id="about"><About /></div>
+          <div id="crew"><Crew /></div>
       </main>
       <Footer />
     </div>
