@@ -33,13 +33,13 @@ const Home = () => {
             <a href="https://discord.gg/Yu9Ah3aVXR" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
               <FaDiscord size={iconSize * 2}/>
             </a>
-            <a href="https://twitch.tv/your_twitch" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
-              <FaTwitch />
+            <a href="https://twitch.tv/TheVerseCast" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
+              <FaTwitch size={iconSize * 2} />
             </a>
-            <a href="https://youtube.com/your_youtube" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
+            <a href="https://youtube.com/TheVerseSquad" target="_blank" rel="noopener noreferrer" style={{ margin: '0 10px' }}>
               <FaYoutube size={iconSize * 2} />
             </a>
-            <a href="mailto:theversecast@gmail.com" style={{ margin: '0 10px' }}>
+            <a href="mailto:TheVerseSquad@gmail.com" style={{ margin: '0 10px' }}>
               <FaEnvelope size={iconSize * 2}/>
             </a>
           </div>
