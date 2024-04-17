@@ -20,6 +20,7 @@
 
 
   .navbar-brand {
+    padding-left: 20px;
     cursor: pointer;
     img {
       height: 60px; // Make sure your logo fits well
@@ -47,6 +48,7 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
+    padding-right: 20px;
 
     .nav-item .nav-link {
       color: #fff200;
@@ -62,7 +64,7 @@
 
   .btn-primary {
     margin-left: auto;
-
+    padding-right: 20px;
     background-color: #ed1c24;
     color: white;
     padding: 10px 20px;
@@ -83,6 +85,7 @@
     align-items: center;
     justify-content: flex-start; // Aligns items at the start in a column
     padding-top: 10px; // Adds a bit of padding at the top for spacing
+    font-size: 18px;
   }
 
   .navbar-nav,

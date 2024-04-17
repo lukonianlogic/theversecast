@@ -37,6 +37,7 @@ const Header = () => {
             </ul>
           </div>
           <button className="btn btn-primary">SUBSCRIBE</button>
+
       </nav>
     </header>
   );
