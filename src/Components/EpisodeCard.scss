@@ -1,7 +1,8 @@
 .episode-card {
   border: 10px solid #00aff0; // Blue border around the card
   max-width: 400px; // Maximum width of the card
-  max-height: 600px; // Set a maximum height for consistency
+  height: auto;
+  max-height: 1000px; // Set a maximum height for consistency
   overflow: hidden; // Hide overflow to maintain the design integrity
   background-color: #003c55; // Dark blue background color
   padding: 20px; // Padding inside the card
@@ -10,7 +11,7 @@
   transition: all 0.3s ease; // Smooth transition for all properties including margin-bottom
 
   &:hover {
-    max-height: 1200px; // Increase max height on hover to accommodate more content
+    max-height: 1400px; // Increase max height on hover to accommodate more content
     transform: scale(1.1); // Scale up the card on hover
     margin-bottom: 50px; // Increase the bottom margin to ensure space for the enlarged card
 
@@ -30,22 +31,24 @@
     width: 100%; // Image stretches to fit the container's width
     height: auto; // Height adjusts to maintain the aspect ratio
     display: block; // Ensures there are no extra spaces around the image
+    max-height: 300px;
   }
 
   .episode-title {
     color: white;
-    font-size: 24px;
+    font-size: clamp( 18px, 1.5vw, 24px); // Responsive font size for the title
     margin-top: 10px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     text-overflow: ellipsis;
+    
   }
 
   .episode-description {
     color: white;
-    font-size: 16px;
+    font-size: clamp( 16px, .75vw, 18px); // Responsive font size for the title
     margin-top: 5px;
     visibility: hidden; // Initially hidden
     opacity: 0; // Initially transparent
@@ -74,13 +77,23 @@
   }
 }
 
-@media (max-width: 768px) {
-  .episode-card {
-    max-width: 100%; // Allows the card to fill the container
-    margin: 10px 0; // Adjusts vertical margin, removes horizontal
-    &:hover {
-      transform: none; // Disables scaling on hover for smaller devices
-    }
-  }
-}
+// @media (max-width: 992px) {
+//   .episode-card {
+//     width: auto; // Allows the card to fill the container
+//     margin: 10px 20px; // Adjusts vertical margin, removes horizontal
+//     min-height: 600px;
+//     aspect-ratio: 1 / 1.5;
+//     max-height: none;
+
+//     &:hover {
+//       transform: scale(1.2); // Scale up the card on hover
+//     }
+
+//     .episode-description, .spotify-link-button {
+//       visibility: visible; // Make description visible on hover
+//       opacity: 1; // Set opacity to 1 to show the description
+//       max-height: none; // Remove any max-height restriction to show full content
+//     }
+//   }
+// }
 

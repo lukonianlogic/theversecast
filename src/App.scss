@@ -1,31 +1,33 @@
 .App {
   text-align: center;
+  align-items: center;
   color: white;
   background-color: black;
-  padding: 20px 0; // Adds vertical padding to the entire app container
+  padding: 100px 0; // Consistent padding around the application
+
+  main {
+    padding: 0 20px; // Ensures padding inside the main container for better edge spacing
+
+    > div {
+      margin-bottom: 30px; // Spacing between sections
+    }
+  }
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media (max-width: 992px) {
+  .App {
+    .main {
+      justify-content: center;
+      padding: 120px 10px; // Reduced padding for smaller screens
+
+      > div {
+        margin-bottom: 50px; // Smaller margin between sections for tighter mobile layout
+      }
+    }
+    // .home {
+    //   display: none;
+    // }
   }
 }
 
-// Additional padding for each section inside the main app
-// These styles target direct children of the main element if they need more specific spacing
-main > * {
-  margin-bottom: 30px; // Adds a bottom margin to all direct children of <main>
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

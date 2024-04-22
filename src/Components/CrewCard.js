@@ -9,7 +9,7 @@ const CrewCard = ({ crew }) => {
       <div className="crew-card-inner">
         <div className="crew-card-front">
           <div className="crew-image-container">
-            <img src={image} alt={name} className="crew-image" />
+            <img src={image} alt={image} className="crew-image" />
           </div>
           <div className="crew-info">
             <h3 className="crew-name">{name}</h3>

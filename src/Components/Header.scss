@@ -27,14 +27,7 @@
     }
   }
 
-  .navbar-toggler {
-    border: none;
-    background-color: none;
-    border: none;
-    &:focus {
-      outline: none;
-    }
-  }
+
 
   .navbar-collapse {
     display: flex;
@@ -80,21 +73,14 @@
 }
 
 @media (max-width: 992px) {
-  .navbar-collapse {
-    flex-direction: column;
+  .navbar-collapse, .navbar-nav, .btn-primary, .nav-item, .nav-link {
+    display: none;
+  }
+
+  .navbar-brand {
+    padding-left: 0;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start; // Aligns items at the start in a column
-    padding-top: 10px; // Adds a bit of padding at the top for spacing
-    font-size: 18px;
   }
 
-  .navbar-nav,
-  .btn-primary {
-    width: 100%; // Full width for better mobile responsiveness
-    text-align: center; // Centers the text within the buttons and links
-  }
-
-  .btn-primary {
-    margin-top: 10px; // Adds space between the nav items and the button
-  }
 }
