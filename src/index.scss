@@ -5,9 +5,24 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: black;
+  color: white; // Ensure good contrast
+  font-size: 16px; // Base font size
+
+  @media (max-width: 768px) {
+    font-size: 14px; // Slightly smaller font size on mobile devices
+  }
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  background-color: #333; // Light background for code blocks
+  color: #eee; // Light text for code
+  padding: 2px 4px; // Padding to make code blocks stand out
+  border-radius: 4px; // Rounded corners for code blocks
 }
+
+img {
+  max-width: 100%; // Ensures images are never wider than their container
+  height: auto; // Maintains aspect ratio
+}
+

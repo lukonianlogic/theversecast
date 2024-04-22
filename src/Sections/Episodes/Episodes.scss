@@ -1,69 +1,70 @@
 .episodes-container {
-  background-image: url('../../../public/starfield.png'); // Ensure the correct path to your image
-  background-size: cover; // Ensures the background covers the entire container
-  background-position: center; // Centers the background image
-  background-repeat: no-repeat; // Prevents the background image from repeating
-  min-height: 100vh; // Minimum height of 100% of the viewport height
-  width: 100vw; // Width of 100% of the viewport width
+  background-image: url('../../../public/starfield.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px; // Add padding to prevent content from touching the edges
-  box-sizing: border-box; // Includes padding in width and height calculation
 }
 
 .episode-section {
-  width: 100%; // Ensures section uses full width of its container
-  max-width: 1200px; // Limits the maximum width for better layout control
-  margin: 0 auto; // Centers the section horizontally within the container
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .section-title {
-  padding-top: 50px;
-  font-size: 40px;
+  font-size: 3rem;
   color: #fff200;
-  margin-bottom: 20px; // Adds space below the title
-  text-align: center; // Centers the title text
+  margin-bottom: 20px;
 }
 
 .episode-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; // Aligns cards centrally within the container
-  gap: 20px; // Adds space between the cards
+  justify-content: space-around; /* Ensures cards are spaced out evenly */
+  width: 100%; /* Ensures the container takes full width */
 }
 
 .episode-card {
-  flex: 1 0 30%; // Flex-grow, flex-shrink, and flex-basis set to 30%
-  max-width: 360px; // Ensures that cards do not grow too wide
-  margin: 10px; // Margin around each card for spacing
-  transition: all 0.3s ease; // Smooth transition for all properties including margin-bottom
+  flex: 1 0 30%; /* Shrink or grow as needed, basis 30% */
+  margin: 10px; /* Space around each card */
 }
 
 .btn-primary {
+  margin-left: auto;
+  padding-right: 20px;
   background-color: #ed1c24;
   color: white;
   padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
   font-size: 24px;
   font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 20px; // Space above the button
+
+  &:hover {
+    background-color: darken(#ed1c24, 10%);
+  }
 }
 
-/* Media Query for Mobile Devices */
 @media (max-width: 768px) {
   .episode-card {
-    flex-basis: 100%; // Each card takes full width of the container on small screens
-    max-width: none; // Remove max-width restriction
+    flex-basis: 100%; /* Each card takes full width of the container on small screens */
+    margin: 10px 0; /* Adjust vertical margin, remove horizontal */
   }
 
   .episode-cards {
-    justify-content: space-around; // Adjusts spacing to better fit mobile screens
+    justify-content: center; /* Centers cards on smaller screens */
   }
 
   .section-title {
-    font-size: 24px; // Smaller font size for smaller screens
+    font-size: 24px; /* Smaller font size for smaller screens */
   }
+
 }

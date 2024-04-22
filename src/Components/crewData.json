@@ -25,7 +25,7 @@
     "favoriteTVShow": "Doctor Who",
     "favoriteNovel": "The Hitchhiker's Guide to the Galaxy",
     "rank": "Lieutenant",
-    "position": "Engineer"
+    "position": "Science Officer"
   },
   {
     "crewId": "3",
@@ -38,7 +38,7 @@
     "favoriteMovie": "2001: A Space Odyssey",
     "favoriteTVShow": "Star Trek The Next Generation",
     "favoriteNovel": "Moby Dick",
-    "rank": "Lieutenant",
+    "rank": "Commander",
     "position": "Engineer"
   },
   {
@@ -50,9 +50,9 @@
     "likesDislikes": "Likes: Boxing, Dislikes: Communication breakdowns",
     "specialSkills": "Punching, Singing",
     "favoriteMovie": "Revenge of the Sith",
-    "favoriteTVShow": "Gray's Anatomy",
+    "favoriteTVShow": "The Golden Girls",
     "favoriteNovel": "The Left Hand of Darkness",
-    "rank": "Lieutenant",
+    "rank": "Sargeant",
     "position": "Security Officer"
   },
   {

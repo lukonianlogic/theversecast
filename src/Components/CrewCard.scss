@@ -1,7 +1,8 @@
 .crew-card {
   margin-top: 20px;
-  width: 600px;
-  height: 1000px;
+  max-width: 600px;
+  width: 100%;
+  aspect-ratio: 1 / 1.75;
   background-color: #003c55;
   border: 10px solid #00aff0;
   border-radius: 10px;
@@ -20,8 +21,7 @@
     transition: transform 0.5s; // Ensure this does not conflict with the hover effect
   }
 
-  &-front,
-  &-back {
+  &-front, &-back {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -34,7 +34,7 @@
     padding: 20px;
     box-sizing: border-box;
     text-align: center;
-    font-size: 32px;
+    font-size: clamp(24px, 1.5vw, 32px); // Responsive font size for the text
     color: white;
   }
 
@@ -43,25 +43,26 @@
     transform: rotateY(180deg);
   }
 
-  // &-image-container {
-  //   flex: 0.75; 
-  // }
-
-  &-image, .crew-image {
-    width: 400px;
-    height: 400px;
+  .crew-image-container {
+    width: 100%; // Makes the image responsive within its container
+    max-width: 400px; // Maximum size on larger screens
+    height: auto; // Maintain aspect ratio
     border-radius: 50%;
     margin-bottom: 20px;
+    transition: width 0.3s ease; // Smooth transition for resizing
+
+
   }
 
-  &-name, .crew-name { // Combine similar styles
-    font-size: 70px;
+  .crew-name { // Combine similar styles
+    margin-top: 10px;
+    font-size: clamp(32px, 3.5vw, 64px); // Responsive font size for the name
     font-weight: bold;
     margin-bottom: 10px;
   }
 
-  &-position, &-rank, .crew-position, .crew-rank{
-    font-size: 64px;
+  .crew-position, .crew-rank {
+    font-size: clamp(24px, 2.5vw, 40px); // Responsive font size for position and rank
     font-style: italic;
     margin-bottom: 10px;
   }
@@ -81,5 +82,17 @@
   &:hover .crew-card-back {
     backface-visibility: visible; // Show back on hover
     display: flex;
+  }
+
+  .crew-image {
+    width: 100%; // Responsive width
+    height: auto;
+    aspect-ratio: 1 / 1; // Enforce square aspect ratio
+    object-fit: cover; // Ensure the image covers the area without distorting aspect ratio
+    border-radius: 50%; // Makes the image round
+    margin-bottom: 20px;
+    transition: width 0.3s ease; // Smooth transition for resizing
+  
+ 
   }
 }

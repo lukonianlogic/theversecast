@@ -1,76 +1,76 @@
 .home {
-  padding-top: 80px; // Ensures content is not hidden behind the header
   .hero {
     position: relative;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url('../../../public/verse-bg.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-  }
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: transparent;
-  }
+    .content-wrapper {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      align-items: center;
+      padding: 0 20px;
 
-  .content {
-    position: absolute;
-    top: 40%;
-    left: 100px;
-    transform: translateY(-50%);
-    z-index: 2;
-    padding: 20px;
-    color: white;
-    text-align: left;
-    width: 100%;
-    max-width: 800px;
+      @media (max-width: 992px) {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .content {
+        max-width: 800px;
+        padding: 20px;
+        color: white;
+
+        @media (max-width: 992px) {
+          order: 2;
+        }
+      }
+
+      .logo {
+        max-width: 800px;
+        max-height: 822px;
+
+        img {
+          width: 100%;
+          height: auto;
+          max-width: 800px;
+
+          @media (max-width: 992px) {
+            max-width: 300px;
+          }
+        }
+      }
+    }
   }
 
   .social-icons {
-    // margin: 50px 50px; // Increase margin to accommodate larger icons
-    display: inline-flex; // Align icons nicely
-    align-items: center; // Center icons vertically
-  }
-
-  a {
-    color: white; // Ensures links are visible against the dark background
-    margin: 0 10px; // Spacing between icons
-    transition: color 0.3s ease-in-out; // Smooth transition for hover effect
-
-    &:hover {
-      color: #00aff0; // Highlight color when hovered
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    a {
+      margin: 0 10px;
+      color: white;
+      transition: color 0.3s ease-in-out;
+      &:hover {
+        color: #00aff0;
+      }
     }
   }
-  
-  h1 {
-    font-size: clamp(2rem, 5vw, 3rem); // Responsive font size using clamp
-    margin-bottom: 20px;
-  }
 
-  h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem); // Smaller and responsive
-    margin-bottom: 20px;
+  h1, h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
   }
 
   iframe {
     width: 100%;
-    max-width: 800px; // Limits the maximum width
-    height: auto; // Height adjusts proportionally
-    aspect-ratio: 16 / 9; // Maintain aspect ratio for the iframe
-  }
-
-  @media (max-width: 768px) {
-    .hero {
-      height: auto; // Adjusts height to fit content
-    }
-    .content {
-      left: 10px; // Adjust left padding/margin on smaller screens
-      font-size: 90%;
-    }
+    max-width: 800px;
+    height: 352px;
+    aspect-ratio: 16 / 9;
   }
 }
