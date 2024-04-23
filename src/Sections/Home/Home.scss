@@ -9,7 +9,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 50px;
 
     .content-wrapper {
       display: flex;
@@ -65,7 +64,7 @@
   }
 
   h1, h2 {
-    font-size: clamp(1.25rem, 5vw, 2.5rem);
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
   }
 
   iframe {
